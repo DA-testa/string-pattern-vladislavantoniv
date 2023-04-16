@@ -4,8 +4,8 @@ def readd_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
     choise=input();
-    template="";
-    string="";
+    template="x";
+    string="h";
     if choise=='I':
         template=input();
         print(template)
@@ -15,6 +15,9 @@ def readd_input():
         template=f.readline();
         string=f.readline();
     ret_arr=template+" "+string;
+    print(template)
+    print(string)
+    print(ret_arr)
     return ret_arr
     # after input type choice
     # read two lines 
