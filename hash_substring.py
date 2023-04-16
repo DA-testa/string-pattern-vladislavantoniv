@@ -13,7 +13,6 @@ def readd_input():
         f=open("tests/06","r");
         template=f.readline();
         string=f.readline();
-    ret_arr=template+" "+string;
     print(ret_arr)
     return ret_arr
     # after input type choice
