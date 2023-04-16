@@ -6,15 +6,14 @@ def readd_input():
     choise=input();
     if choise=='I':
         template=input();
-        print(template)
+        ret_arr=template+" ";
         string=input();
+        ret_arr=ret_arr+string;
     elif choise=='F':
         f=open("tests/06","r");
         template=f.readline();
         string=f.readline();
     ret_arr=template+" "+string;
-    print(template)
-    print(string)
     print(ret_arr)
     return ret_arr
     # after input type choice
