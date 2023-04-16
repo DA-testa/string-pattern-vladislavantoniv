@@ -5,7 +5,7 @@ def readd_input():
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
     choise=input();
     print(choise)
-    if choise.equals("I"):
+    if choise.__eq__("I"):
         print("Hello")
     if choise=='I':
         template=input();
