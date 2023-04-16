@@ -8,6 +8,7 @@ def readd_input():
     string="";
     if choise=='I':
         template=input();
+        print(template)
         string=input();
     elif choise=='F':
         f=open("tests/06","r");
