@@ -6,15 +6,16 @@ def readd_input():
     choise=input();
     if choise=='I':
         template=input();
-        ret_arr=template+" ";
+        #ret_arr=template+" ";
         string=input();
-        ret_arr=ret_arr+string;
+        #ret_arr=ret_arr+string;
+        return template+" "+string
     elif choise=='F':
         f=open("tests/06","r");
         template=f.readline();
         string=f.readline();
-    print(ret_arr)
-    return ret_arr
+        return template+" "+string
+    #return ret_arr
     # after input type choice
     # read two lines 
     # first line is pattern 
