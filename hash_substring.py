@@ -43,8 +43,7 @@ def get_occurrences(pattern, text):
         if pattern_hash==text_hash:
             for j in range(len(pattern)):
                 if text[i+j]==pattern[j]:
-                    j==j+1;
-                    print(pattern[j])
+                    j+=1;
                 else:
                     break;
             if j==len(pattern):
@@ -53,11 +52,6 @@ def get_occurrences(pattern, text):
             text_hash=(256*(text_hash-ord(text[i])*h)+ord(text[i+len(pattern)]))%7;
             if text_hash<0:
                 text_hash=text_hash+7;
-    k=0;
-    result_string="";
-    for k in enumerate (data):
-        result_string=result_string+data[k]+" "
-        print(result_string)
     # and return an iterable variable
     return data
 
